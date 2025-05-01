@@ -1,14 +1,11 @@
 import yfinance as yf
 import pandas as pd
-import matplotlib.pyplot as plt
-from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
 # Show all columns without truncation
 pd.set_option('display.max_columns', None)
 
 # Increase column width so long strings don't get cut off
 pd.set_option('display.max_colwidth', None)
-
 # Optional: Expand overall display width
 pd.set_option('display.width', 200)
 
