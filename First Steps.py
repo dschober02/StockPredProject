@@ -1,7 +1,7 @@
 import yfinance as yf
 import pandas as pd
-import matplotlib.pyplot as plt
-from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+
+# Pushing to main
 
 # Show all columns without truncation
 pd.set_option('display.max_columns', None)
