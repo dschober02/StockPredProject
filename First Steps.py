@@ -54,7 +54,7 @@ def closing(alpha):
         "Price Difference": diff,
         "Predicted Difference": pred_diff
     })
-    print("Using the closing prices historical data, we can observe these predictions next to actual prices:")
+    print("Using the closing price historical data, we can observe these predictions next to actual prices:")
     print(df)
     correct = analytics(diff, pred_diff)
     print(f"\nThe percentage of stock moves that were predicted correctly was {correct * 100: .2f}%")
@@ -87,7 +87,7 @@ def opening(alpha):
         predictions.append(result[-1])
         diff.append(close_prices[-1] - close_prices[-2])
         pred_diff.append(result[-1] - close_prices[-2])
-    print("Using the open AND close prices historical data, we can observe these predictions next to actual prices:")
+    print("Using the open AND close price historical data, we can observe these predictions next to actual prices:")
     df = pd.DataFrame({
         "Stock": stocks,
         "Today's Price": actual,
@@ -129,6 +129,5 @@ def analytics(diff, pred_diff):
         if (diff[i] / pred_diff[i]) > 0:
             correct += 1
     return correct / 50
-
 
 run()
